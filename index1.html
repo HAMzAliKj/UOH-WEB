@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1 class="main-title">University Of Haripur Student Portal</h1>
+    <h3 class="welcome-text">Welcome, student! Everything you need is below.</h3>
+    <div class="header-buttons">
+
+    <button onclick="showDate()" class="date-btn">Show Today Date</button>
+    <p id="butt" class="date-output"></p>
+
+    </div>
+    </main>
+
+    <section class="news-section">
+        <h2>Latest University News</h2>
+        <article class="news-article">
+            <h3>New AI Lab Open</h3>
+            <p>
+                The university has launched a brand new Artificial Intelligence lab for students.
+          It is equipped with high-performance computers and GPU servers.
+          Students from all departments can book time slots every we
+            </p>
+            <details class="news-details">
+                <summary>
+                    Read More About This
+                </summary>
+                <p>
+                    The lab has 30 workstations, each with NVIDIA RTX 4090 GPUs.
+            It supports deep learning, computer vision, and NLP research projects.
+            Registration opens next Monday via the student portal.
+                </p>
+            </details>
+        </article>
+
+        <article class="news-article">
+            <h3>Semester Exam Schedule Relase</h3>
+            <p>
+                Semester 3 to Semester 8 examinations will be conducted in physical (on-campus) mode and will consist of MCQ-based papers.
+
+Semester 1 and Semester 2 examinations will be conducted online.
+
+            </p>
+            <details class="news-details">
+                <summary>Click To Read More</summary>
+                <p>
+                    Students must bring their university ID card to every exam. Late arrivals after 15 minutes will not be allowed in the hall. Mobile phones are strictly prohibited during examinations.
+                </p>
+            </details>
+        </article>
+    </section>
+
+
+    <section>
+        <h2 class="timetable-heading">Weekly Class Timetable</h2>
+
+<table class="timetable">
+
+  <tr class="timetable-header-row">
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+  </tr>
+
+  <tr class="row-white">
+    <td class="time-col">8:00 - 9:00</td>
+    <td>Design &amp; Analysis of Algorithms</td>
+    <td>Web Engineering</td>
+    <td>Machine Learning</td>
+    <td>Artificial Neural Network</td>
+  </tr>
+
+  <tr class="row-light">
+    <td class="time-col">9:00 - 10:00</td>
+    <td>Web Engineering</td>
+    <td>Machine Learning</td>
+    <td>Artificial Neural Network</td>
+    <td>COAL</td>
+  </tr>
+
+  <tr class="row-white">
+    <td class="time-col">10:00 - 11:00</td>
+    <td>Design &amp; Analysis of Algorithms</td>
+    <td>Web Engineering</td>
+    <td>Machine Learning</td>
+    <td>Artificial Neural Network</td>
+  </tr>
+
+  <tr class="row-light">
+    <td class="time-col">11:00 - 12:00</td>
+    <td>Web Engineering</td>
+    <td>Machine Learning</td>
+    <td>Artificial Neural Network</td>
+    <td>COAL</td>
+  </tr>
+
+  <tr>
+    <td class="time-col">12:00 - 1:00</td>
+    <td colspan="4" class="lunch-cell">🍽️ Lunch Break</td>
+  </tr>
+
+  <tr class="row-white">
+    <td class="time-col">1:00 - 2:00</td>
+    <td>Web Engineering</td>
+    <td>Machine Learning</td>
+    <td>Artificial Neural Network</td>
+    <td>COAL</td>
+  </tr>
+
+</table>
+    </section>
+
+
+   <section class="media-section">
+
+  <h2 class="media-heading">🎬 University Of Haripur Media</h2>
+
+  <table class="media-table">
+    <tr>
+
+      <td class="media-cell">
+        <p class="media-label">📺 University Video</p>
+        <iframe width="420" height="250" src="https://www.youtube.com/embed/bZgdciSjdYg?si=ec-k8pjtrJuK4TjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- <iframe width="420" height="250"
+          src="https://www.youtube.com/embed/bZgdciSjdYg?si=swRKJh-YEKWHeax4"
+          title="YouTube video player"
+          frameborder="0"
+          style="border: 2px solid #2c2c75;"
+          allowfullscreen>
+        </iframe> -->
+      </td>
+
+      <td class="media-cell">
+        <p class="media-label">📍 University Location</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.3899200870146!2d72.91020927525815!3d33.97805942164454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfb29116f4f94f%3A0xaf454a05b9dadc43!2sThe%20University%20of%20Haripur!5e1!3m2!1sen!2s!4v1781688493220!5m2!1sen!2s"
+          width="420" height="250"
+          class="map-frame"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </td>
+
+    </tr>
+  </table>
+
+</section>
+
+  <section class="registration-section">
+
+    <h2 class="registration-heading">Student Registration</h2>
+
+    <div class="registration-box">
+
+        <p class="registration-text">
+            New student? Click below to register at <strong>University of Haripur</strong>
+        </p>
+
+        <div>
+            <button onclick="handleSign()" class="signup-btn">Sign Up</button>
+
+            <p id="welcome-msg" class="welcome-msg"></p>
+        </div>
+    </div>
+
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
